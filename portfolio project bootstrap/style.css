@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    text-decoration: none !important;
+}
+.card a:hover{
+    background-color: rgb(180, 170, 178);
+    color: black !important;
+    transform: scale(2);
+    transition: 0.3s;
+}
+.card .words{
+    padding: 10px 15px;
+    color: rgb(216, 209, 209); 
+    background-color: rgb(17, 54, 221);
+    border-radius: 5px;
+    cursor: pointer;
+}
+h1{
+    text-align: center;
+    font-size:50px !important;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow:1.5px 1.5px 1.5px grey;
+    color:orange;
+    font-weight:bolder;
+}
+
+/* Medium screen */
+@media screen and (max-width:1025px) {
+    h1{
+        text-align: center;
+        font-size:45px !important;
+        font-family: 'Josefin Sans', sans-serif;
+        text-shadow:1.5px 1.5px 1.5px grey;
+        color:orange;
+        font-weight:bolder;
+    }
+    h2{
+        text-align: center;
+        font-size:x-large !important;
+        font-family: 'Josefin Sans', sans-serif;
+        text-shadow:3px 3px 3px grey;
+        color:rgb(173, 168, 168);
+        font-weight:bold;
+    }
+    .img-fluid.pic{
+        background-image: url(pics/moi.jpg);
+        height:350px;
+        background-position: top;
+        background-size: contain;
+        background-repeat:no-repeat;
+        border-radius:50px;
+        filter: brightness(1.2), saturate(6px);
+    }
+    p{
+        text-align: center;
+        font-size:xx-large;
+        font-family: 'Teko', sans-serif;
+        text-shadow:0 0 9px rgb(34, 34, 34);
+        color:rgb(233, 230, 230);
+        font-weight:bold;
+        line-height: 1.3em;
+    }
+    h6{
+        color:rgb(19, 18, 18);
+        font-size: 20px !important;
+    }
+    .icons{
+        font-size:40px ;
+        color:rgb(248, 246, 246);
+        justify-content:space-evenly;
+        text-shadow:2px 2px 2px grey;
+        text-align: center;
+        padding:60px;
+        background-color:rgba(24, 21, 34, 0.801);
+        animation-name: dave;
+        animation-timing-function: linear;
+        animation-duration: 10s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-play-state: running;
+        transition: 7s ease-in;
+    }
+    #frame{
+        height: 500px;
+        margin-bottom:60px;
+    }
+    .landingPage{
+        height: 300px !important;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(pics/bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        animation-name: carousel;
+        animation-duration: 10s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: infinite;
+        transition: 5s ease;
+        background-blend-mode:darken;
+        background-color:rgba(0, 0, 0, 0.719);
+        border-radius: 50px 0px 50px 0px;  
+    }
+    .contact_me h3{
+        text-align: center;
+        font-size:28px !important;
+        font-family: 'Josefin Sans', sans-serif;
+        color:rgb(170, 169, 169) !important;
+        font-weight:lighter;
+    }
+    .copyright{
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.932);
+        height:30px;   
+        font-size: 18px !important;
+    }
+}
+/* Small screen */
+@media screen and (max-width:768px) {
+  
+    h1{
+        text-align: center;
+        font-size:30px !important;
+        font-family: 'Josefin Sans', sans-serif;
+        text-shadow:1.5px 1.5px 1.5px grey;
+        color:orange;
+        font-weight:bolder;
+    }
+    h2{
+        text-align: center;
+        font-size:larger !important;
+        font-family: 'Josefin Sans', sans-serif;
+        text-shadow:3px 3px 3px grey;
+        color:rgb(173, 168, 168) !important;
+        font-weight:bold;
+    }
+    .img-fluid.pic{
+        background-image: url(pics/moi.jpg);
+        height:270px;
+        /* max-height: 450px; */
+        background-position: top;
+        background-size: contain;
+        background-repeat:no-repeat;
+        border-radius:50px;
+        filter: brightness(1.2), saturate(6px);
+    }
+    p{
+        text-align: center;
+        font-size:x-large;
+        font-family: 'Teko', sans-serif;
+        text-shadow:0 0 9px rgb(34, 34, 34);
+        color:rgb(233, 230, 230);
+        font-weight:bold;
+        line-height: 1.3em;
+    }
+    h6{
+        color:rgb(19, 18, 18);
+        font-size: 18px !important;
+    }
+    .icons{
+        font-size:30px;
+        color:rgb(248, 246, 246);
+        justify-content:space-evenly;
+        text-shadow:2px 2px 2px grey;
+        text-align: center;
+        padding:60px;
+        background-color:rgba(24, 21, 34, 0.801);
+        animation-name: dave;
+        animation-timing-function: linear;
+        animation-duration: 10s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-play-state: running;
+        transition: 7s ease-in;
+    }
+    #frame{
+        height: 400px;
+        margin-bottom:60px;
+    }
+    .landingPage{
+        height: 280px !important;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(pics/bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        animation-name: carousel;
+        animation-duration: 10s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: infinite;
+        transition: 5s ease;
+        background-blend-mode:darken;
+        background-color:rgba(0, 0, 0, 0.719);
+        border-radius: 50px 0px 50px 0px;  
+    }
+    .contact_me h3{
+        text-align: center;
+        font-size:24px !important;
+        font-family: 'Josefin Sans', sans-serif;
+        color:rgb(170, 169, 169) !important;
+        font-weight:lighter;
+    }
+    .copyright{
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.932);
+        height:30px;   
+        font-size: 15px !important;
+    }
+}
+
+/* Extra small screen */
+@media screen and (max-width:576px) {
+    h1{
+        text-align: center;
+        font-size:23px !important;
+        font-family: 'Josefin Sans', sans-serif;
+        text-shadow:1.5px 1.5px 1.5px grey;
+        color:orange;
+        font-weight:bolder;
+    }h2{
+        text-align: center;
+        font-size:medium;
+        font-family: 'Josefin Sans', sans-serif;
+        text-shadow:3px 3px 3px grey;
+        color:rgb(173, 168, 168) !important;
+        font-weight:bold;
+    }
+    .img-fluid.pic{
+        background-image: url(pics/moi.jpg);
+        height:200px;
+        /* max-height: 450px; */
+        background-position: top;
+        background-size: contain;
+        background-repeat:no-repeat;
+        border-radius:50px;
+        filter: brightness(1.2), saturate(6px);
+    }
+    p{
+        text-align: center;
+        font-size:large !important;
+        font-family: 'Teko', sans-serif;
+        text-shadow:0 0 9px rgb(34, 34, 34);
+        color:rgb(233, 230, 230);
+        font-weight:bold;
+        line-height: 1.3em;
+    }
+    h6{
+        color:rgb(19, 18, 18);
+        font-size: 13px !important;
+    }
+    .icons{
+        font-size:35px !important;
+        color:rgb(248, 246, 246);
+        justify-content:space-evenly;
+        text-shadow:2px 2px 2px grey;
+        text-align: center;
+        padding:60px;
+        background-color:rgba(24, 21, 34, 0.801);
+        animation-name: dave;
+        animation-timing-function: linear;
+        animation-duration: 10s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-play-state: running;
+        transition: 7s ease-in;
+    }
+    #frame{
+        height: 200px;
+        margin-bottom:30px !important;
+    }
+    .landingPage{
+        height: 200px !important;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(pics/bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        animation-name: carousel;
+        animation-duration: 10s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: infinite;
+        transition: 5s ease;
+        background-blend-mode:darken;
+        background-color:rgba(0, 0, 0, 0.719);
+        border-radius: 50px 0px 50px 0px;  
+    }
+    .contact_me h3{
+        text-align: center;
+        font-size:18px !important;
+        font-family: 'Josefin Sans', sans-serif;
+        color:rgb(170, 169, 169) !important;
+        font-weight:lighter;
+    }
+    .copyright{
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.932);
+    height:10px;   
+    font-size: 14px !important;
+}
+  
+}
+h2{
+    text-align: center;
+    font-size:xx-large;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow:3px 3px 3px grey;
+    color:rgb(173, 168, 168) !important;
+    font-weight:bold;
+}
+h3{
+    text-align: center;
+    font-size:2em;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow:0 0 1px whitesmoke;
+    color:rgb(182, 121, 29) !important;
+    font-weight:light;
+    line-height: 1.4em;
+}
+h5{
+    color:rgb(196, 102, 48);
+    font-size: 3vw !important;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-shadow: 0 0 3px rgb(22, 22, 22);
+}
+h6{
+    color:rgb(19, 18, 18);
+    font-size: 23px;
+}
+p{
+    text-align: center;
+    font-size:xx-large;
+    font-family: 'Teko', sans-serif;
+    text-shadow:0 0 9px rgb(34, 34, 34);
+    color:rgb(233, 230, 230);
+    font-weight:bold;
+    line-height: 1.3em;
+}
+/* Index page styling */
+/* landing page */
+.landingPage{
+    height: 400px;
+    max-height: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(pics/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation-name: carousel;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    transition: 5s ease;
+    background-blend-mode:darken;
+    background-color:rgba(0, 0, 0, 0.719);
+    border-radius: 50px 0px 50px 0px;  
+}
+@keyframes carousel{
+    50%{
+        background-image: url(pics/bg1.jpeg);
+    }
+}
+
+.header{
+    background-color: rgba(0, 0, 0, 0.767);
+    position: sticky;
+    z-index: 1500;
+    top: 0;
+}
+
+.box{
+    width: 30%;
+    height: fit-content;
+    margin: 20px auto;
+   
+}
+.contain{
+    background-image: linear-gradient(to right, rgb(0, 0, 7) ,rgb(47, 47, 48) , rgb(78, 78, 77), grey);
+    
+}
+.about_me{
+    padding-top:150px;
+    transition: 1s ease-in-out;
+}
+.bio-box{
+    height: fit-content;
+    text-align: center;
+    background-color:rgba(21, 20, 34, 0.644) ;
+    border-radius: 20px;
+    padding:20px;
+}
+.img-fluid.pic{
+    background-image: url(pics/moi.jpg);
+    height:450px;
+    /* max-height: 450px; */
+    background-position: top;
+    background-size: contain;
+    background-repeat:no-repeat;
+    border-radius:50px;
+    filter: brightness(1.2), saturate(6px);
+}
+.texts{
+    color:rgb(175, 172, 172);
+}
+.texts:hover{
+    color:rgb(240, 147, 25);
+    transform:scale(1.1);
+    transition:0.5s;
+}
+#frame{
+    height: 600px;
+    margin-bottom:60px;
+}
+ul li .frames{
+    color:blue;
+    text-shadow:0 0 0.5px rgb(163, 162, 162);
+}
+
+.icons{
+    font-size:80px;
+    color:rgb(248, 246, 246);
+    justify-content:space-evenly;
+    text-shadow:2px 2px 2px grey;
+    text-align: center;
+    padding:60px;
+    background-color:rgba(24, 21, 34, 0.801);
+    animation-name: dave;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    transition: 7s ease-in;
+}
+@keyframes dave{
+    50%{
+        background-color: rgba(0, 0, 0, 0.842);
+    }
+}
+.html{
+    color:rgb(230, 133, 23);
+}
+
+.js{
+    color:rgb(235, 235, 42);   
+}
+.bs{
+    color:rgb(235, 42, 225);
+}
+.css{
+    color:rgb(56, 87, 189);
+}
+/* Index page styling end */
+
+
+/* Contact page styling */
+.contact_me{
+    height:fit-content;
+    margin-bottom:70px;
+    background-color:rgb(26, 26, 32);
+    
+}
+.icons2{
+    font-size:30px;
+    justify-content:space-evenly;
+    
+}
+.icons2 a{
+    /* color:whitesmoke; */
+    /* text-shadow:1px 1px 1px grey; */
+    text-shadow: 0 0 1.5px #b8b6b6;
+}
+.icons2 a:hover{
+    font-size:30px;
+    color:rgb(41, 41, 41);
+    justify-content:space-evenly;
+    text-shadow:1px 1px 1px grey;
+    transition:0.5s;
+    
+}
+.contact_me h1{
+    color:rgb(15, 15, 15);
+    text-shadow: 0 0 1px #140944;
+}
+.contact_me h2{
+    color:rgb(8, 8, 8);
+    text-shadow:1px 1px 1px grey;
+}
+
+.contact_me h3{
+    text-align: center;
+    font-size:35px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow:1px 1px 1px grey;
+    color:rgb(170, 169, 169) !important;
+    font-weight:bold;
+}
+.pre-footer{
+    margin-bottom:50px;
+    height: fit-content;
+}
+.next-pre-footer{
+    height: 400px;
+}
+/* Contact page styling end */
+
+/* Project page styling */
+.project{
+    background-image: url(pics/projects.jpeg);
+    height:350px;
+    background-position: center;
+    background-size: auto;
+    background-repeat:no-repeat;
+    border-radius:50px 0px 50px 0px;
+    background-blend-mode:darken;
+    background-color:rgba(0, 0, 0, 0.575);
+}
+.project a{
+    text-align: center;
+    font-size:30px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow:1px 1px 1px grey;
+    color:whitesmoke;
+    outline-color: 2px solid black;
+    font-weight:bold;
+}
+.project a:hover{
+    text-align: center;
+    font-size:30px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow:1px 1px 1px grey;
+    color:grey;
+    font-weight:bold;
+    transition:0.5s;
+}
+.card{
+    background-color: rgba(0, 0, 0, 0.767);
+    padding:50px;
+    margin-bottom:150px;
+    overflow-x: scroll;
+    width:100vw;
+    margin-top: 100px !important;
+} 
+
+.card_text{
+    width: 70%;
+    height:fit-content;
+    background-color:rgba(100, 97, 97, 0.753);
+    margin: auto;
+    padding:40px 30px;
+    box-shadow:0 0 1px rgb(207, 206, 206);
+}
+.cards h5{
+    color:rgba(235, 125, 22, 0.89);
+}
+.cards p{
+    color:rgb(22, 22, 22);
+    line-height: 1.3em;
+    font-size: 2vw;
+}
+/* Project page styling end */
+.number{
+    border:none;
+}
+
+.nav-link.btn:hover{
+    color:black;
+    background-color:rgb(68, 0, 255) !important;
+}
+.cards a.btn{
+    font-size: 1.5vw;
+}
+/* Footer */
+.copyright{
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.932);
+    height:30px;   
+    font-size: 20px;
+}
